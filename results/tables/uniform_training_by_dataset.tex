@@ -1,0 +1,27 @@
+\begin{table*}[!t]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Selector & BioASQ & MedMCQA & MedQA & MMLU-Med & PubMedQA & Avg. \\
+\midrule
+\multicolumn{7}{l}{\textbf{Evaluation generator: LLaMA-3-8B-Instruct}} \\
+CoT ($N=1$) & 81.45 & 41.50 & 45.56 & 49.69 & 55.80 & 54.80 \\
+Self-Consistency ($N=8$) & 93.55 & 52.21 & 62.06 & 62.58 & 77.40 & 69.56 \\
+Pretrained single verifier ($N=8$) & 80.65 & 50.56 & 58.68 & 59.51 & 59.40 & 61.76 \\
+Pretrained verifier pool ($N=8$) & 80.65 & 50.97 & 57.66 & 61.96 & 57.00 & 61.65 \\
+\rowcolor{oursrow} \ours{} (Uniform) ($N=8$) & 94.35 & 58.12 & 67.95 & 70.55 & 78.40 & 73.87 \\
+\rowcolor{oursrow} \ours{} (Heterogeneous) ($N=8$) & 94.35 & 58.24 & 66.77 & 70.55 & 78.60 & 73.70 \\
+\midrule
+\multicolumn{7}{l}{\textbf{Evaluation generator: Qwen2.5-7B-Instruct}} \\
+CoT ($N=1$) & 91.94 & 49.80 & 56.17 & 69.33 & 71.80 & 67.80 \\
+Self-Consistency ($N=8$) & 94.35 & 55.46 & 64.57 & 76.07 & 74.80 & 73.05 \\
+Pretrained single verifier ($N=8$) & 91.94 & 53.72 & 62.61 & 73.01 & 75.00 & 71.25 \\
+Pretrained verifier pool ($N=8$) & 92.74 & 54.98 & 64.57 & 73.62 & 75.60 & 72.30 \\
+\rowcolor{oursrow} \ours{} (Uniform) ($N=8$) & 95.97 & 59.60 & 68.11 & 76.07 & 77.40 & 75.43 \\
+\rowcolor{oursrow} \ours{} (Heterogeneous) ($N=8$) & 96.77 & 60.27 & 68.26 & 76.07 & 77.60 & 75.80 \\
+\bottomrule
+\end{tabular}
+\caption{Ablation study of answer-selection strategies across five medical QA datasets. Within each table block, all methods use the same evaluation generator and saved candidate responses. CoT uses the first response ($N=1$), while Self-Consistency, the pretrained verifiers, and the trained verifier pools select from the same eight candidates ($N=8$). Verifier-based selectors use sigmoid scores, averaged across members for pools; exact ties select the earliest candidate. Pretrained single verifier refers to Skywork-Llama v0.2 before local fine-tuning; Pretrained verifier pool combines the five released heterogeneous verifiers without local fine-tuning. Avg.\ is the unweighted mean accuracy (\%) across datasets.}
+\label{tab:training_full}
+\end{table*}

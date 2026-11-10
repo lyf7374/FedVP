@@ -1,0 +1,79 @@
+{
+  "candidate_budgets": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "accuracy_unit": "percent",
+  "average": "unweighted mean of five complete test-set accuracies",
+  "pretrained_verifier": "Skywork/Skywork-Reward-Llama-3.1-8B-v0.2",
+  "pretrained_ranking": "sigmoid_score; exact ties select the earliest candidate",
+  "source": "figures/candidate_scaling.tex from the current manuscript",
+  "series": {
+    "LLaMA-3-8B-Instruct": {
+      "FedVP (Uniform)": [
+        54.801568928,
+        66.4061760427,
+        71.3338201663,
+        73.8745791129
+      ],
+      "FedVP (Heterogeneous)": [
+        54.801568928,
+        66.3128878709,
+        70.9307195884,
+        73.7028216139
+      ],
+      "Self-Consistency": [
+        54.801568928,
+        63.3130286891,
+        67.9111911837,
+        69.5589072388
+      ],
+      "Pretrained Verifier": [
+        54.801568928,
+        57.7799464586,
+        60.6936629402,
+        61.7592888587
+      ],
+      "Oracle": [
+        54.801568928,
+        69.5001576028,
+        77.5334182254,
+        83.8936796207
+      ]
+    },
+    "Qwen2.5-7B-Instruct": {
+      "FedVP (Uniform)": [
+        67.804793909,
+        71.7503834627,
+        74.3308640691,
+        75.4293140379
+      ],
+      "FedVP (Heterogeneous)": [
+        67.804793909,
+        71.9701883101,
+        74.978060009,
+        75.7959014079
+      ],
+      "Self-Consistency": [
+        67.804793909,
+        70.0845616377,
+        71.4425746698,
+        73.0525844913
+      ],
+      "Pretrained Verifier": [
+        67.804793909,
+        70.2079343326,
+        71.775115647,
+        71.2534118185
+      ],
+      "Oracle": [
+        67.804793909,
+        74.9366241084,
+        80.9944413641,
+        84.8017911488
+      ]
+    }
+  }
+}

@@ -1,0 +1,5790 @@
+{
+  "schema_version": 1,
+  "seed": 42,
+  "index_basis": "zero-based row index in data/processed/<dataset>/train.json",
+  "center_order": [
+    "bioasq",
+    "medmcqa",
+    "medqa",
+    "mmlu",
+    "pubmedqa"
+  ],
+  "public_counts": {
+    "bioasq": 49,
+    "medmcqa": 200,
+    "medqa": 1018,
+    "mmlu": 130,
+    "pubmedqa": 45
+  },
+  "total_questions": 1442,
+  "records": [
+    {
+      "dataset": "bioasq",
+      "original_train_index": 0
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 2
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 9
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 11
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 30
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 33
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 55
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 63
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 68
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 72
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 73
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 76
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 77
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 79
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 84
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 93
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 101
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 104
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 137
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 140
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 155
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 173
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 175
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 182
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 192
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 195
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 199
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 204
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 208
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 250
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 287
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 289
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 310
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 312
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 314
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 320
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 329
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 332
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 391
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 430
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 434
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 437
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 449
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 455
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 461
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 477
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 481
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 484
+    },
+    {
+      "dataset": "bioasq",
+      "original_train_index": 488
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 29
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 44
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 56
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 93
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 100
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 111
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 134
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 154
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 173
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 179
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 188
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 196
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 199
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 210
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 211
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 218
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 229
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 237
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 239
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 246
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 247
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 251
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 252
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 253
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 254
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 279
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 282
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 332
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 353
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 354
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 361
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 367
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 387
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 399
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 410
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 414
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 422
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 432
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 435
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 445
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 450
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 471
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 472
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 479
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 482
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 486
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 497
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 507
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 508
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 521
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 522
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 546
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 554
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 559
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 575
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 582
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 602
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 608
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 611
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 621
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 629
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 632
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 635
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 649
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 694
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 702
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 727
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 733
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 741
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 786
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 788
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 789
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 790
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 792
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 836
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 840
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 845
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 857
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 867
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 879
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 889
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 927
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 929
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 930
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 949
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 955
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 976
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 979
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 988
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1025
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1027
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1029
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1045
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1060
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1075
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1078
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1091
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1110
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1112
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1114
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1125
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1146
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1153
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1165
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1170
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1173
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1176
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1178
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1216
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1222
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1231
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1234
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1237
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1241
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1260
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1288
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1298
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1301
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1309
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1317
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1334
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1338
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1349
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1367
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1375
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1377
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1383
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1398
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1420
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1427
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1456
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1461
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1468
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1485
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1503
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1510
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1517
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1518
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1522
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1525
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1527
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1528
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1532
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1535
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1537
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1551
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1553
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1562
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1569
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1572
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1577
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1582
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1590
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1592
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1604
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1613
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1618
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1624
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1645
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1657
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1660
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1664
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1672
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1673
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1674
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1678
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1697
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1701
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1710
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1722
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1724
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1738
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1767
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1773
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1774
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1783
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1784
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1785
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1790
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1798
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1805
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1812
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1818
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1829
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1832
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1841
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1849
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1856
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1907
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1912
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1913
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1920
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1930
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1937
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1939
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1968
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1972
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1974
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1989
+    },
+    {
+      "dataset": "medmcqa",
+      "original_train_index": 1994
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 14
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 19
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 33
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 47
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 50
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 59
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 68
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 70
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 83
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 95
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 99
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 101
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 102
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 103
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 113
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 119
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 135
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 149
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 173
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 177
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 200
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 218
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 221
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 245
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 247
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 251
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 260
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 263
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 290
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 293
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 304
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 311
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 321
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 333
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 345
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 357
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 360
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 373
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 379
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 385
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 396
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 424
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 429
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 434
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 450
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 455
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 457
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 461
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 468
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 473
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 487
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 518
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 525
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 533
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 538
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 554
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 575
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 586
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 611
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 613
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 624
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 635
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 647
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 653
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 673
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 720
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 724
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 741
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 744
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 747
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 749
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 763
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 772
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 811
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 812
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 828
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 839
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 850
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 860
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 884
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 894
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 895
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 927
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 937
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 944
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 951
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 955
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 967
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 970
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 979
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 980
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 993
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1002
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1006
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1010
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1022
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1039
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1043
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1053
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1059
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1078
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1085
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1107
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1114
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1120
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1121
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1142
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1153
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1157
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1166
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1175
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1178
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1197
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1208
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1213
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1217
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1237
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1261
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1265
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1266
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1267
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1277
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1282
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1300
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1323
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1324
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1327
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1328
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1333
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1346
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1350
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1351
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1355
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1358
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1365
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1369
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1373
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1402
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1408
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1413
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1427
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1433
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1453
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1457
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1470
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1482
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1483
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1498
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1512
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1516
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1530
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1575
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1579
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1586
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1595
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1602
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1617
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1621
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1622
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1623
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1626
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1639
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1643
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1650
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1662
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1665
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1669
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1679
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1688
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1693
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1697
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1701
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1707
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1713
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1730
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1732
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1743
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1747
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1766
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1786
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1791
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1795
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1825
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1841
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1852
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1853
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1897
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1899
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1923
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1931
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1933
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1935
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1954
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1955
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1964
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1976
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 1984
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2002
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2019
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2021
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2034
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2036
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2039
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2049
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2054
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2055
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2057
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2069
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2071
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2109
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2124
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2128
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2136
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2139
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2144
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2145
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2154
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2157
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2189
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2193
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2200
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2201
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2210
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2215
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2218
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2264
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2267
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2308
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2319
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2320
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2325
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2340
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2351
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2356
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2357
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2366
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2383
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2388
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2389
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2391
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2407
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2408
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2412
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2417
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2420
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2450
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2455
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2456
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2459
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2471
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2473
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2482
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2483
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2484
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2495
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2512
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2517
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2527
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2531
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2538
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2559
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2573
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2576
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2582
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2588
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2613
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2614
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2615
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2619
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2620
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2633
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2635
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2664
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2666
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2677
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2680
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2685
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2692
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2701
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2714
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2734
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2736
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2751
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2760
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2769
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2771
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2791
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2798
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2802
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2818
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2820
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2856
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2864
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2876
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2879
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2884
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2913
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2932
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2952
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2958
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2963
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2981
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2992
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2996
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 2998
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3015
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3017
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3027
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3037
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3056
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3058
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3059
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3065
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3070
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3079
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3097
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3100
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3107
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3118
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3120
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3128
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3131
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3132
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3143
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3154
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3194
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3206
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3208
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3222
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3233
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3239
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3244
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3249
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3274
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3290
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3312
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3330
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3344
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3355
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3356
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3369
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3378
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3379
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3399
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3422
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3425
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3429
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3447
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3449
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3461
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3463
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3468
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3470
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3474
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3485
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3488
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3501
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3506
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3507
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3519
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3522
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3524
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3528
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3530
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3546
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3547
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3564
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3579
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3592
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3596
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3599
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3617
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3621
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3635
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3640
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3643
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3646
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3647
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3669
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3679
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3702
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3705
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3707
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3714
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3717
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3725
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3746
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3772
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3773
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3781
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3804
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3813
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3827
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3833
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3838
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3844
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3853
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3855
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3857
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3859
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3887
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3896
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3898
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3909
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3910
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3914
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3928
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3931
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3955
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3963
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3973
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3974
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 3978
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4003
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4010
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4015
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4021
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4029
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4030
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4035
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4064
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4073
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4081
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4084
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4102
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4111
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4112
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4116
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4156
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4168
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4184
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4189
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4191
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4193
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4197
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4202
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4203
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4211
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4215
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4227
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4237
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4245
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4256
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4257
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4278
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4279
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4299
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4320
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4325
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4329
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4335
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4337
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4341
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4342
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4344
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4346
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4349
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4351
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4358
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4360
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4361
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4365
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4382
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4385
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4392
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4400
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4412
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4414
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4415
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4417
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4432
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4436
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4445
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4467
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4484
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4488
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4501
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4504
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4508
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4509
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4532
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4549
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4561
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4584
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4601
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4602
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4642
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4653
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4671
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4705
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4710
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4721
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4722
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4730
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4742
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4766
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4772
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4799
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4808
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4830
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4831
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4851
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4854
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4858
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4859
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4872
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4877
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4879
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4885
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4901
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4919
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4949
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4952
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4973
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4975
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 4978
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5007
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5015
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5026
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5034
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5035
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5044
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5049
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5062
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5079
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5090
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5095
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5098
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5104
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5114
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5125
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5128
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5142
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5153
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5155
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5175
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5192
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5228
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5239
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5272
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5277
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5278
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5279
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5281
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5291
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5295
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5298
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5306
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5329
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5337
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5339
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5340
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5348
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5349
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5352
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5354
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5357
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5359
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5362
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5383
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5401
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5403
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5411
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5414
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5425
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5438
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5466
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5467
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5478
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5479
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5484
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5497
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5513
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5519
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5522
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5528
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5538
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5549
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5553
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5559
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5563
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5589
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5598
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5608
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5609
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5617
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5627
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5643
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5666
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5689
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5697
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5707
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5714
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5727
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5740
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5743
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5746
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5748
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5752
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5756
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5758
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5759
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5763
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5768
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5773
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5775
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5803
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5824
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5825
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5834
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5835
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5837
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5871
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5873
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5890
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5907
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5928
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5931
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5942
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5950
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5955
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5959
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5985
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5993
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 5998
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6011
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6020
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6023
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6025
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6069
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6076
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6083
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6092
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6110
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6122
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6127
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6148
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6154
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6192
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6210
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6212
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6233
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6262
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6277
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6278
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6291
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6321
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6322
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6326
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6334
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6357
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6383
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6391
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6392
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6434
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6438
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6454
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6455
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6471
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6487
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6504
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6505
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6515
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6590
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6592
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6595
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6600
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6604
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6607
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6640
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6647
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6656
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6668
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6673
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6682
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6684
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6691
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6734
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6737
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6769
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6772
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6794
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6808
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6812
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6835
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6844
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6849
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6853
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6887
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6899
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6906
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6907
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6929
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6931
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6944
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6950
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6951
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6959
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 6961
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7041
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7049
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7062
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7090
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7095
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7105
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7113
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7115
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7121
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7127
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7130
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7137
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7146
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7147
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7169
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7171
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7179
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7203
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7211
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7213
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7222
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7225
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7245
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7249
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7251
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7265
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7277
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7298
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7305
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7308
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7311
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7338
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7351
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7362
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7397
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7401
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7417
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7424
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7426
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7436
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7442
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7443
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7447
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7450
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7471
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7478
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7479
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7490
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7493
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7494
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7517
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7528
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7551
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7573
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7574
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7578
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7589
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7592
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7621
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7630
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7658
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7660
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7664
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7668
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7694
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7708
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7713
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7734
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7735
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7765
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7781
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7782
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7785
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7792
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7800
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7806
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7816
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7825
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7837
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7847
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7849
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7856
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7864
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7865
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7872
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7877
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7882
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7891
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7903
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7910
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7912
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7928
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7934
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7952
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7954
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7958
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7962
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7977
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 7992
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8001
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8013
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8021
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8023
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8030
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8031
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8032
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8054
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8055
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8074
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8086
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8090
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8096
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8099
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8108
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8109
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8133
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8140
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8146
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8166
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8170
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8177
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8188
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8189
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8191
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8193
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8205
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8206
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8222
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8227
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8228
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8239
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8240
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8242
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8243
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8260
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8267
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8290
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8309
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8316
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8331
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8340
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8352
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8363
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8378
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8388
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8391
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8406
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8415
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8420
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8421
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8423
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8450
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8455
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8480
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8481
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8507
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8514
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8529
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8540
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8563
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8571
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8587
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8600
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8609
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8612
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8614
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8617
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8630
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8632
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8638
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8669
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8681
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8686
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8694
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8695
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8703
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8705
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8726
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8729
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8735
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8749
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8759
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8761
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8783
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8801
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8808
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8812
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8814
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8815
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8818
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8826
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8841
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8852
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8872
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8876
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8880
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8902
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8908
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8928
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8933
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8934
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8935
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8937
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8961
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8963
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8986
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8989
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 8992
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9000
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9002
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9017
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9025
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9051
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9058
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9062
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9069
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9072
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9075
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9091
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9106
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9112
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9124
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9146
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9153
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9160
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9169
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9176
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9181
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9187
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9189
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9194
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9202
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9217
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9218
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9255
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9265
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9276
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9297
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9305
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9310
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9317
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9322
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9351
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9356
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9357
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9367
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9373
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9374
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9396
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9403
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9404
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9444
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9446
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9452
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9463
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9473
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9519
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9522
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9538
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9541
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9559
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9582
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9586
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9606
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9609
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9619
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9630
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9645
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9659
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9664
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9680
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9695
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9712
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9715
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9739
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9743
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9749
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9760
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9772
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9773
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9775
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9776
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9778
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9781
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9797
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9803
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9812
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9814
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9823
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9844
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9854
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9863
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9879
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9881
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9905
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9909
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9947
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9964
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9978
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9996
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 9999
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 10002
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 10006
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 10011
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 10017
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 10027
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 10051
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 10058
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 10060
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 10097
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 10114
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 10116
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 10128
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 10138
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 10146
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 10154
+    },
+    {
+      "dataset": "medqa",
+      "original_train_index": 10174
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 6
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 19
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 22
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 32
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 39
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 53
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 69
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 84
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 87
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 88
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 94
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 96
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 98
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 124
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 128
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 168
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 169
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 183
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 186
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 191
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 196
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 197
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 202
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 207
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 222
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 224
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 225
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 231
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 235
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 246
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 257
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 263
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 269
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 301
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 307
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 308
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 316
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 318
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 322
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 327
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 344
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 351
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 380
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 393
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 400
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 401
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 405
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 406
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 417
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 422
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 423
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 428
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 429
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 438
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 449
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 458
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 476
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 491
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 495
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 527
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 575
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 597
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 608
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 623
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 624
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 628
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 631
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 664
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 669
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 672
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 673
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 674
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 686
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 690
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 712
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 715
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 732
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 741
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 752
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 755
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 764
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 767
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 774
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 794
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 795
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 824
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 833
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 836
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 844
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 847
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 852
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 856
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 864
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 876
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 888
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 915
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 953
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 961
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 974
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 978
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1003
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1006
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1009
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1014
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1016
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1018
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1019
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1029
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1030
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1042
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1054
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1065
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1090
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1094
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1106
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1122
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1130
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1148
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1159
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1189
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1212
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1228
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1229
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1250
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1260
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1261
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1264
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1267
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1292
+    },
+    {
+      "dataset": "mmlu",
+      "original_train_index": 1297
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 19
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 21
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 36
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 58
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 62
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 92
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 109
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 112
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 117
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 118
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 125
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 127
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 142
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 161
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 164
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 165
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 166
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 175
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 178
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 187
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 198
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 222
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 224
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 253
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 256
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 267
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 281
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 283
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 325
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 327
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 334
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 340
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 350
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 356
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 359
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 360
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 364
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 401
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 405
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 410
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 422
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 435
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 436
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 444
+    },
+    {
+      "dataset": "pubmedqa",
+      "original_train_index": 448
+    }
+  ]
+}

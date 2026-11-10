@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "scope": "Current manuscript main-body experiments",
+  "centers": [
+    {
+      "client": "A",
+      "center": "bioasq",
+      "generator_id": "meta-llama/Llama-3.2-3B-Instruct",
+      "generator_name": "Llama-3.2-3B-Instruct",
+      "verifier_id": "Ray2333/GRM_Llama3.1_8B_rewardmodel-ft",
+      "verifier_name": "GRM_Llama3.1_8B_rewardmodel-ft",
+      "verifier_kind": "standard"
+    },
+    {
+      "client": "B",
+      "center": "medmcqa",
+      "generator_id": "Qwen/Qwen2.5-7B-Instruct",
+      "generator_name": "Qwen2.5-7B-Instruct",
+      "verifier_id": "Skywork/Skywork-Reward-Llama-3.1-8B-v0.2",
+      "verifier_name": "Skywork-Reward-Llama-3.1-8B-v0.2",
+      "verifier_kind": "standard"
+    },
+    {
+      "client": "C",
+      "center": "medqa",
+      "generator_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "generator_name": "Meta-Llama-3-8B-Instruct",
+      "verifier_id": "NCSOFT/Llama-3-OffsetBias-RM-8B",
+      "verifier_name": "Llama-3-OffsetBias-RM-8B",
+      "verifier_kind": "standard"
+    },
+    {
+      "client": "D",
+      "center": "mmlu",
+      "generator_id": "Qwen/Qwen2.5-3B-Instruct",
+      "generator_name": "Qwen2.5-3B-Instruct",
+      "verifier_id": "RLHFlow/ArmoRM-Llama3-8B-v0.1",
+      "verifier_name": "ArmoRM-Llama3-8B-v0.1",
+      "verifier_kind": "armorm"
+    },
+    {
+      "client": "E",
+      "center": "pubmedqa",
+      "generator_id": "Qwen/Qwen2.5-14B-Instruct",
+      "generator_name": "Qwen2.5-14B-Instruct",
+      "verifier_id": "Skywork/Skywork-Reward-V2-Qwen3-8B",
+      "verifier_name": "Skywork-Reward-V2-Qwen3-8B",
+      "verifier_kind": "standard"
+    }
+  ],
+  "train_counts": {
+    "bioasq": 494,
+    "medmcqa": 2000,
+    "medqa": 10178,
+    "mmlu": 1299,
+    "pubmedqa": 450
+  },
+  "test_counts": {
+    "bioasq": 124,
+    "medmcqa": 4183,
+    "medqa": 1273,
+    "mmlu": 163,
+    "pubmedqa": 500
+  },
+  "training": {
+    "epochs": 2,
+    "learning_rate": 0.0001,
+    "effective_batch_size": 32,
+    "microbatch_size": 1,
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "train_score_head": true,
+    "optimizer": "AdamW",
+    "optimizer_betas": [
+      0.9,
+      0.999
+    ],
+    "optimizer_eps": 1e-08,
+    "weight_decay": 0.0,
+    "scheduler": "constant",
+    "seed": 42,
+    "backbone_dtype": "bfloat16",
+    "trainable_dtype": "float32",
+    "compute_dtype": "bfloat16",
+    "attn_implementation": "sdpa",
+    "gradient_checkpointing": true,
+    "checkpoint_steps": 50,
+    "loss": "hard_correctness_bce",
+    "candidate_filter": "none",
+    "split": "train",
+    "input_format": "official_chat_user_question_assistant_full_response",
+    "truncation": false,
+    "input_limit": "model_native_context",
+    "gradient_clipping": null
+  },
+  "uniform": {
+    "target_model_ids": [
+      "meta-llama/Meta-Llama-3-8B-Instruct",
+      "Qwen/Qwen2.5-7B-Instruct"
+    ],
+    "verifier_model_id": "Skywork/Skywork-Reward-Llama-3.1-8B-v0.2",
+    "pools": 2,
+    "members_per_pool": 5,
+    "training_sources_per_center": 1,
+    "source_rule": "Each pool uses only responses from its matching target backbone"
+  },
+  "heterogeneous": {
+    "pools": 1,
+    "members": 5,
+    "training_sources_per_center": 1,
+    "same_pool_across_targets": true,
+    "shared_training_dataset_required": false
+  },
+  "generation": {
+    "candidates_per_question": 8,
+    "seed": 42,
+    "prompt": "FedCoT chain-of-thought prompt with model-native chat template",
+    "temperature_range": [
+      0.3,
+      0.9
+    ],
+    "top_p_range": [
+      0.7,
+      0.95
+    ],
+    "candidate_batch_size": 1024,
+    "initial_max_new_tokens": 4096,
+    "length_policy": "Expand length-limited generation to native context; save unresolved native-limit output for explicit review"
+  },
+  "scoring": {
+    "single_verifier_selection": "highest sigmoid score",
+    "pool_aggregation": "equal mean of five sigmoid scores",
+    "tie_break": "earliest eligible candidate in original order",
+    "accuracy": "normalized extracted-answer exact match",
+    "mean": "unweighted mean of five complete-test-set accuracies",
+    "parser_version": "final-answer-v3-2026-10-21",
+    "truncation": false
+  },
+  "analysis": {
+    "candidate_budgets": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "aggregation_rules": [
+      "mean_probability",
+      "mean_logit",
+      "max_probability",
+      "member_majority_vote"
+    ],
+    "leave_one_out": "Remove one Heterogeneous member at a time; average the remaining four probabilities"
+  },
+  "distillation": {
+    "teacher": "Original Heterogeneous pool trained on full local partitions",
+    "student_model_id": "Skywork/Skywork-Reward-V2-Qwen3-8B",
+    "training": {
+      "epochs": 2,
+      "learning_rate": 0.0001,
+      "rank": 16,
+      "alpha": 32,
+      "dropout": 0.05,
+      "seed": 42,
+      "microbatch_size": 1,
+      "effective_batch_size": 32,
+      "optimizer": "AdamW",
+      "scheduler": "constant",
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ],
+      "train_score_head": true,
+      "gradient_checkpointing": true,
+      "checkpoint_steps": 50,
+      "loss": "binary_cross_entropy_with_logits_on_teacher_probability",
+      "truncation": false
+    },
+    "public": {
+      "students": 1,
+      "questions": 1442,
+      "candidate_generators": 5,
+      "candidates_per_source_per_question": 8,
+      "training_examples": 57680,
+      "public_counts": {
+        "bioasq": 49,
+        "medmcqa": 200,
+        "medqa": 1018,
+        "mmlu": 130,
+        "pubmedqa": 45
+      }
+    },
+    "local": {
+      "students": 5,
+      "data": "Original center-local training partition",
+      "candidate_source": "Center-assigned generator",
+      "candidates_per_question": 8,
+      "total_training_examples": 115368
+    },
+    "evaluation": {
+      "target_model_ids": [
+        "meta-llama/Meta-Llama-3-8B-Instruct",
+        "Qwen/Qwen2.5-7B-Instruct"
+      ],
+      "public_student": "One shared student for all five tests",
+      "local_students": "Each center-local student evaluates its own test set for both target generators",
+      "selection": "highest sigmoid score; exact ties choose earliest eligible candidate"
+    }
+  },
+  "baseline_comparisons": {
+    "conventional": [
+      "FedIT",
+      "FFA-LoRA",
+      "FLoRA",
+      "FedPrompt",
+      "FedProx",
+      "FedAdam",
+      "FedAdagrad",
+      "FedCoT"
+    ],
+    "model_heterogeneous": [
+      "FedMD",
+      "FedMD + SC",
+      "FedMKT",
+      "FedMKT + SC"
+    ],
+    "shared_reference_questions": 1442,
+    "remaining_private_questions": 12979,
+    "fedvp_reference": "Original Heterogeneous pool, without public-data reservation or shared-reference training",
+    "public_split_seed": 42,
+    "fedmd_rounds": 2,
+    "fedmkt_rounds": 5,
+    "fedmkt_server_model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "target_artifacts": "Final client models, not FedMKT server"
+  }
+}

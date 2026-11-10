@@ -1,0 +1,31 @@
+\begin{figure}[!t]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={group size=2 by 1, horizontal sep=4mm, y descriptions at=edge left},
+  width=0.56\columnwidth, height=4.6cm,
+  xmode=log, log basis x=2, xtick={1,2,4,8}, xticklabels={1,2,4,8},
+  xlabel={$N$ candidates}, ymin=52, ymax=86,
+  tick label style={font=\scriptsize}, label style={font=\scriptsize}, title style={font=\scriptsize\bfseries, yshift=-1mm},
+  grid=major, grid style={gray!20},
+  legend style={font=\scriptsize, at={(1.05,-0.33)}, anchor=north, legend columns=2, draw=none, column sep=3pt},
+]
+\nextgroupplot[title={LLaMA-3-8B-Instruct}, ylabel={Avg.\ accuracy (\%)}]
+\addplot[cB, very thick, mark=*, mark size=1.5pt] coordinates {(1,54.8015689280)(2,66.4061760427)(4,71.3338201663)(8,73.8745791129)};
+\addplot[violet, very thick, dashed, mark=diamond*, mark size=1.8pt] coordinates {(1,54.8015689280)(2,66.3128878709)(4,70.9307195884)(8,73.7028216139)};
+\addplot[cC, thick, mark=square*, mark size=1.3pt] coordinates {(1,54.8015689280)(2,63.3130286891)(4,67.9111911837)(8,69.5589072388)};
+\addplot[cA, thick, mark=triangle*, mark size=1.6pt] coordinates {(1,54.8015689280)(2,57.7799464586)(4,60.6936629402)(8,61.7592888587)};
+\addplot[cD, dashed, mark=o, mark size=1.3pt] coordinates {(1,54.8015689280)(2,69.5001576028)(4,77.5334182254)(8,83.8936796207)};
+\legend{\ours{} (Uniform), \ours{} (Heterogeneous), Self-Consistency, Pretrained Verifier, Oracle}
+\nextgroupplot[title={Qwen2.5-7B-Instruct}]
+\addplot[cB, very thick, mark=*, mark size=1.5pt] coordinates {(1,67.8047939090)(2,71.7503834627)(4,74.3308640691)(8,75.4293140379)};
+\addplot[violet, very thick, dashed, mark=diamond*, mark size=1.8pt] coordinates {(1,67.8047939090)(2,71.9701883101)(4,74.9780600090)(8,75.7959014079)};
+\addplot[cC, thick, mark=square*, mark size=1.3pt] coordinates {(1,67.8047939090)(2,70.0845616377)(4,71.4425746698)(8,73.0525844913)};
+\addplot[cA, thick, mark=triangle*, mark size=1.6pt] coordinates {(1,67.8047939090)(2,70.2079343326)(4,71.7751156470)(8,71.2534118185)};
+\addplot[cD, dashed, mark=o, mark size=1.3pt] coordinates {(1,67.8047939090)(2,74.9366241084)(4,80.9944413641)(8,84.8017911488)};
+\end{groupplot}
+\end{tikzpicture}}
+\caption{Candidate-budget scaling analysis across two target backbones. All selection methods use the same first $N\in\{1,2,4,8\}$ saved candidates, with model parameters fixed throughout. SC uses majority voting, and Pretrained Verifier denotes Skywork-Llama without local fine-tuning and ranks candidates by sigmoid score, with exact ties resolved by candidate order. At $N=1$, all methods coincide with CoT. Oracle indicates whether at least one of the first $N$ candidates is correct.}
+\label{fig:scaling}
+\end{figure}

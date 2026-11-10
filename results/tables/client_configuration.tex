@@ -1,0 +1,17 @@
+\begin{table}[!ht]
+\centering\footnotesize
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular*}{\columnwidth}{@{}l@{\extracolsep{\fill}}ll@{}}
+\toprule
+Center & Backbone & Verifier \\
+\midrule
+BioASQ   & LLaMA-3.2-3B & \shortstack[l]{GRM\\(LLaMA-3.1-8B)} \\ \addlinespace[2pt]
+MedMCQA  & Qwen2.5-7B   & \shortstack[l]{Skywork-Llama v0.2\\(LLaMA-3.1-8B)} \\ \addlinespace[2pt]
+MedQA    & LLaMA-3-8B   & \shortstack[l]{OffsetBias\\(LLaMA-3-8B)} \\ \addlinespace[2pt]
+MMLU-Med & Qwen2.5-3B   & \shortstack[l]{ArmoRM\\(LLaMA-3-8B)} \\ \addlinespace[2pt]
+PubMedQA & Qwen2.5-14B  & \shortstack[l]{Skywork-Qwen3 V2\\(Qwen3-8B)} \\
+\bottomrule
+\end{tabular*}
+\caption{Backbone and locally trained verifier at each center in the Heterogeneous setting.}
+\label{tab:client_models}
+\end{table}

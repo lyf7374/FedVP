@@ -1,0 +1,18 @@
+\begin{table}[!b]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}
+\toprule
+& \multicolumn{2}{c}{\textbf{Uniform}} & \multicolumn{2}{c}{\textbf{Heterogeneous}} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Aggregation rule & LLaMA & Qwen & LLaMA & Qwen \\
+\midrule
+Mean probability & 73.87 & \textbf{75.43} & 73.70 & \textbf{75.80} \\
+Mean logit & \textbf{74.21} & 75.42 & \textbf{74.25} & 75.77 \\
+Max probability & 73.33 & 74.41 & 73.68 & 75.32 \\
+Member majority vote & 73.82 & 74.96 & 73.40 & 75.27 \\
+\bottomrule
+\end{tabular}
+\caption{Ablation study of verifier aggregation strategies. Values report five-dataset mean accuracy (\%) under Uniform and Heterogeneous configurations using LLaMA-3-8B-Instruct and Qwen2.5-7B-Instruct as target backbones. Member majority vote selects the candidate receiving the most verifier votes.}
+\label{tab:ablation}
+\end{table}

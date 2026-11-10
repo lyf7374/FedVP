@@ -1,0 +1,26 @@
+\begin{table}[!t]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}
+\toprule
+& \multicolumn{2}{c}{LLaMA-3-8B}
+& \multicolumn{2}{c}{Qwen2.5-7B} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Pool configuration & Avg. & $\Delta$ (pp) & Avg. & $\Delta$ (pp) \\
+\midrule
+Full pool    & 73.70 & -- & 75.80 & -- \\
+w/o Client A & 73.63 & \textcolor{red!75!black}{-0.07}
+             & 75.71 & \textcolor{red!75!black}{-0.09} \\
+w/o Client B & 73.32 & \textcolor{red!75!black}{-0.38}
+             & 75.43 & \textcolor{red!75!black}{-0.37} \\
+w/o Client C & 73.54 & \textcolor{red!75!black}{-0.16}
+             & 76.00 & \textcolor{green!45!black}{+0.20} \\
+w/o Client D & 73.65 & \textcolor{red!75!black}{-0.05}
+             & 75.37 & \textcolor{red!75!black}{-0.43} \\
+w/o Client E & 72.62 & \textcolor{red!75!black}{-1.08}
+             & 75.40 & \textcolor{red!75!black}{-0.39} \\
+\bottomrule
+\end{tabular}
+\caption{Leave-one-out ablation of the Heterogeneous verifier pool, removing each client's contributed verifier. Avg. is the five-dataset mean accuracy (\%); $\Delta$ is the change from the full pool (pp), with decreases in red and increases in green.}
+\label{tab:heterogeneous_loo}
+\end{table}

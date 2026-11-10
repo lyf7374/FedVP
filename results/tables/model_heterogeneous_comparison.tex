@@ -1,0 +1,25 @@
+\begin{table*}[!t]
+\centering\small
+\setlength{\tabcolsep}{3.7pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Method & BioASQ & MedMCQA & MedQA & MMLU-Med & PubMedQA & Avg. \\
+\midrule
+\multicolumn{7}{l}{\textbf{Target backbone: LLaMA-3-8B-Instruct}} \\
+FedMD ($N=1$) & \textbf{95.97} & 57.06 & 61.90 & 65.64 & 76.20 & 71.36 \\
+FedMD + SC ($N=8$) & 93.55 & 57.52 & 61.98 & 66.26 & 75.40 & 70.94 \\
+FedMKT ($N=1$) & \textbf{95.97} & 55.49 & 61.59 & 65.64 & 73.80 & 70.50 \\
+FedMKT + SC ($N=8$) & \textbf{95.97} & 56.90 & 61.59 & 63.80 & 75.20 & 70.69 \\
+\rowcolor{oursrow} \ours{} (Heterogeneous) & 94.35 & \textbf{58.24} & \textbf{66.77} & \textbf{70.55} & \textbf{78.60} & \textbf{73.70} \\
+\midrule
+\multicolumn{7}{l}{\textbf{Target backbone: Qwen2.5-7B-Instruct}} \\
+FedMD ($N=1$) & 85.48 & 50.11 & 60.49 & 66.26 & 70.40 & 66.55 \\
+FedMD + SC ($N=8$) & 91.94 & 54.63 & 65.20 & 73.62 & 74.60 & 72.00 \\
+FedMKT ($N=1$) & 93.55 & 52.09 & 58.05 & \textbf{76.69} & 70.80 & 70.24 \\
+FedMKT + SC ($N=8$) & 94.35 & 53.96 & 57.66 & 76.07 & 73.40 & 71.09 \\
+\rowcolor{oursrow} \ours{} (Heterogeneous) & \textbf{96.77} & \textbf{60.27} & \textbf{68.26} & 76.07 & \textbf{77.60} & \textbf{75.80} \\
+\bottomrule
+\end{tabular}
+\caption{Accuracy (\%) across five medical QA datasets. FedMD, FedMKT, and \ours{} use the same five client backbones listed in Table~\ref{tab:client_models}, with the same target backbone architectures for inference as in Table~\ref{tab:main}. FedMD and FedMKT additionally use a shared public reference set for knowledge distillation, whereas \ours{} uses only client-local training data. Avg.\ is the unweighted mean across datasets.}
+\label{tab:model_heterogeneous}
+\end{table*}

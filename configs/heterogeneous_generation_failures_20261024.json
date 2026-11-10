@@ -1,0 +1,36 @@
+{
+  "status": "user_approved",
+  "generator_name": "Llama-3.2-3B-Instruct",
+  "model_id": "meta-llama/Llama-3.2-3B-Instruct",
+  "dataset": "medmcqa",
+  "split": "test",
+  "candidate_ids": [
+    [
+      1165,
+      0
+    ],
+    [
+      1165,
+      3
+    ],
+    [
+      1178,
+      5
+    ],
+    [
+      1196,
+      1
+    ],
+    [
+      1196,
+      7
+    ]
+  ],
+  "failure_reason": "repetitive_generation_no_final_answer",
+  "policy": "retain_N8_attempts_record_confirmed_failure_exclude_from_answer_selection",
+  "candidates_per_question": 8,
+  "whole_question_forced_incorrect": false,
+  "sampling_changed": false,
+  "normal_length_truncation_authorized_as_failure": false,
+  "description": "Five retained, individually reviewed looping attempts in the original Llama-3.2-3B/MedMCQA test pool; all question denominators are retained."
+}

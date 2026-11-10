@@ -1,0 +1,21 @@
+\begin{table*}[!t]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Selector & BioASQ & MedMCQA & MedQA & MMLU-Med & PubMedQA & Avg. & $\Delta$ (pp) \\
+\midrule
+\multicolumn{8}{l}{\textbf{Target backbone: LLaMA-3-8B-Instruct}} \\
+\ours{} (Teacher pool) & 94.35 & \textbf{58.24} & 66.77 & 70.55 & \textbf{78.60} & 73.70 & \textemdash \\
+Distilled verifier (Public data) & \textbf{96.77} & 57.85 & 68.34 & 71.17 & \textbf{78.60} & 74.55 & \textcolor{green!45!black}{$+0.84$} \\
+Distilled verifier (Local data) & \textbf{96.77} & 57.16 & \textbf{68.66} & \textbf{73.62} & 78.00 & \textbf{74.84} & \textcolor{green!45!black}{$+1.14$} \\
+\midrule
+\multicolumn{8}{l}{\textbf{Target backbone: Qwen2.5-7B-Instruct}} \\
+\ours{} (Teacher pool) & \textbf{96.77} & \textbf{60.27} & \textbf{68.26} & 76.07 & 77.60 & 75.80 & \textemdash \\
+Distilled verifier (Public data) & 95.97 & 58.91 & \textbf{68.26} & 77.91 & 77.60 & 75.73 & \textcolor{red!75!black}{$-0.07$} \\
+Distilled verifier (Local data) & 95.97 & 59.00 & 67.87 & \textbf{79.14} & \textbf{78.00} & \textbf{76.00} & \textcolor{green!45!black}{$+0.20$} \\
+\bottomrule
+\end{tabular}
+\caption{Distillation of the Heterogeneous verifier pool. Public distillation produces one shared verifier, whereas local distillation produces a separate verifier at each center. Teacher and students select from the same eight candidates per question using mean pool probabilities and single-verifier sigmoid scores, respectively. Values are accuracy (\%); Avg.\ equally weights the five datasets. Best results in each block are bold. $\Delta$ denotes the change in average accuracy relative to the teacher pool (pp), computed before rounding.}
+\label{tab:distillation}
+\end{table*}

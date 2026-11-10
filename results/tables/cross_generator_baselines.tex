@@ -1,0 +1,42 @@
+% Table fragment for the manuscript.
+% Requires the manuscript's existing booktabs, xcolor (table option), and \ours macro.
+\begin{table*}[!t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.05}
+
+\begin{tabular}{lccccc@{\hspace{14pt}}c}
+\toprule
+& Client A & Client B & Client C & Client D & Client E & Pool \\
+\cmidrule(lr){2-6}\cmidrule(lr){7-7}
+Target backbone
+& \shortstack{BioASQ\\GRM}
+& \shortstack{MedMCQA\\Skywork-Llama}
+& \shortstack{MedQA\\OffsetBias}
+& \shortstack{MMLU-Med\\ArmoRM}
+& \shortstack{PubMedQA\\Skywork-Qwen3}
+& \shortstack{\ours{}\\(Heterogeneous)} \\
+\midrule
+
+Llama-3.2-3B & \cellcolor[HTML]{FFF8DC}69.69 & 70.95 & 67.51 & 68.18 & 71.52 & \textbf{72.85} \\[-2pt]
+& \cellcolor[HTML]{FFF8DC}{\footnotesize(65.74)} & & & & & \\[6pt]
+
+Qwen2.5-7B & 74.08 & \cellcolor[HTML]{FFF8DC}74.90 & 72.66 & 73.49 & 74.94 & \textbf{75.80} \\[-2pt]
+& & \cellcolor[HTML]{FFF8DC}{\footnotesize(71.25)} & & & & \\[6pt]
+
+Llama-3-8B & 72.09 & 71.81 & \cellcolor[HTML]{FFF8DC}70.56 & 68.42 & 72.73 & \textbf{73.70} \\[-2pt]
+& & & \cellcolor[HTML]{FFF8DC}{\footnotesize(60.82)} & & & \\[6pt]
+
+Qwen2.5-3B & 67.00 & 68.48 & 65.58 & \cellcolor[HTML]{FFF8DC}65.82 & 67.37 & \textbf{70.21} \\[-2pt]
+& & & & \cellcolor[HTML]{FFF8DC}{\footnotesize(64.10)} & & \\[6pt]
+
+Qwen2.5-14B & 77.18 & 77.77 & 77.19 & 76.88 & \cellcolor[HTML]{FFF8DC}78.85 & \textbf{78.90} \\[-2pt]
+& & & & & \cellcolor[HTML]{FFF8DC}{\footnotesize(74.46)} & \\
+
+\bottomrule
+\end{tabular}
+
+\caption{Five-dataset mean accuracy (\%) for cross-backbone verifier evaluation. Shaded diagonal cells correspond to each center's assigned backbone and verifier; parentheses report pretrained verifier results.}
+\label{tab:cross_generator}
+\end{table*}

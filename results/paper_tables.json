@@ -1,0 +1,861 @@
+{
+  "snapshot_date": "2026-11-10",
+  "source": "Current manuscript main-body table sources",
+  "value_precision": "Displayed paper values; averages and deltas were computed before rounding in the experiments. Do not recompute deltas from rounded averages.",
+  "accuracy_unit": "percent",
+  "tables": {
+    "client_configuration": {
+      "table_number": 1,
+      "label": "tab:client_models",
+      "latex": "tables/client_configuration.tex",
+      "records": [
+        {
+          "client": "A",
+          "dataset": "BioASQ",
+          "generator": "meta-llama/Llama-3.2-3B-Instruct",
+          "verifier": "Ray2333/GRM_Llama3.1_8B_rewardmodel-ft"
+        },
+        {
+          "client": "B",
+          "dataset": "MedMCQA",
+          "generator": "Qwen/Qwen2.5-7B-Instruct",
+          "verifier": "Skywork/Skywork-Reward-Llama-3.1-8B-v0.2"
+        },
+        {
+          "client": "C",
+          "dataset": "MedQA",
+          "generator": "meta-llama/Meta-Llama-3-8B-Instruct",
+          "verifier": "NCSOFT/Llama-3-OffsetBias-RM-8B"
+        },
+        {
+          "client": "D",
+          "dataset": "MMLU-Med",
+          "generator": "Qwen/Qwen2.5-3B-Instruct",
+          "verifier": "RLHFlow/ArmoRM-Llama3-8B-v0.1"
+        },
+        {
+          "client": "E",
+          "dataset": "PubMedQA",
+          "generator": "Qwen/Qwen2.5-14B-Instruct",
+          "verifier": "Skywork/Skywork-Reward-V2-Qwen3-8B"
+        }
+      ]
+    },
+    "main_results": {
+      "table_number": 2,
+      "label": "tab:main",
+      "latex": "tables/main_results.tex",
+      "records": [
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "FedIT",
+          "accuracy_percent": {
+            "BioASQ": 86.29,
+            "MedMCQA": 57.47,
+            "MedQA": 60.8,
+            "MMLU-Med": 66.26,
+            "PubMedQA": 76.6
+          },
+          "average_percent": 69.48
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "FFA-LoRA",
+          "accuracy_percent": {
+            "BioASQ": 91.13,
+            "MedMCQA": 58.59,
+            "MedQA": 61.59,
+            "MMLU-Med": 65.64,
+            "PubMedQA": 76.4
+          },
+          "average_percent": 70.67
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "FLoRA",
+          "accuracy_percent": {
+            "BioASQ": 87.9,
+            "MedMCQA": 57.69,
+            "MedQA": 61.35,
+            "MMLU-Med": 63.19,
+            "PubMedQA": 75.6
+          },
+          "average_percent": 69.15
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "FedPrompt",
+          "accuracy_percent": {
+            "BioASQ": 92.74,
+            "MedMCQA": 59.77,
+            "MedQA": 61.74,
+            "MMLU-Med": 69.33,
+            "PubMedQA": 77.6
+          },
+          "average_percent": 72.24
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "FedProx",
+          "accuracy_percent": {
+            "BioASQ": 83.87,
+            "MedMCQA": 46.74,
+            "MedQA": 54.52,
+            "MMLU-Med": 60.12,
+            "PubMedQA": 72.2
+          },
+          "average_percent": 63.49
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "FedAdam",
+          "accuracy_percent": {
+            "BioASQ": 81.45,
+            "MedMCQA": 44.32,
+            "MedQA": 48.55,
+            "MMLU-Med": 53.99,
+            "PubMedQA": 52.8
+          },
+          "average_percent": 56.22
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "FedAdagrad",
+          "accuracy_percent": {
+            "BioASQ": 85.48,
+            "MedMCQA": 45.64,
+            "MedQA": 49.33,
+            "MMLU-Med": 53.99,
+            "PubMedQA": 53.8
+          },
+          "average_percent": 57.65
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "FedCoT",
+          "accuracy_percent": {
+            "BioASQ": 88.71,
+            "MedMCQA": 46.4,
+            "MedQA": 56.09,
+            "MMLU-Med": 60.12,
+            "PubMedQA": 76.8
+          },
+          "average_percent": 65.62
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "FedVP (Uniform)",
+          "accuracy_percent": {
+            "BioASQ": 94.35,
+            "MedMCQA": 58.12,
+            "MedQA": 67.95,
+            "MMLU-Med": 70.55,
+            "PubMedQA": 78.4
+          },
+          "average_percent": 73.87
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "FedVP (Heterogeneous)",
+          "accuracy_percent": {
+            "BioASQ": 94.35,
+            "MedMCQA": 58.24,
+            "MedQA": 66.77,
+            "MMLU-Med": 70.55,
+            "PubMedQA": 78.6
+          },
+          "average_percent": 73.7
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "FedIT",
+          "accuracy_percent": {
+            "BioASQ": 86.29,
+            "MedMCQA": 49.82,
+            "MedQA": 52.16,
+            "MMLU-Med": 63.19,
+            "PubMedQA": 65.0
+          },
+          "average_percent": 63.29
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "FFA-LoRA",
+          "accuracy_percent": {
+            "BioASQ": 88.71,
+            "MedMCQA": 46.81,
+            "MedQA": 52.47,
+            "MMLU-Med": 67.48,
+            "PubMedQA": 68.4
+          },
+          "average_percent": 64.78
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "FLoRA",
+          "accuracy_percent": {
+            "BioASQ": 89.52,
+            "MedMCQA": 52.38,
+            "MedQA": 56.4,
+            "MMLU-Med": 67.48,
+            "PubMedQA": 70.0
+          },
+          "average_percent": 67.16
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "FedPrompt",
+          "accuracy_percent": {
+            "BioASQ": 87.9,
+            "MedMCQA": 46.38,
+            "MedQA": 53.57,
+            "MMLU-Med": 60.74,
+            "PubMedQA": 63.6
+          },
+          "average_percent": 62.44
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "FedProx",
+          "accuracy_percent": {
+            "BioASQ": 72.58,
+            "MedMCQA": 43.58,
+            "MedQA": 47.45,
+            "MMLU-Med": 62.58,
+            "PubMedQA": 56.8
+          },
+          "average_percent": 56.6
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "FedAdam",
+          "accuracy_percent": {
+            "BioASQ": 90.32,
+            "MedMCQA": 48.46,
+            "MedQA": 56.48,
+            "MMLU-Med": 70.55,
+            "PubMedQA": 69.0
+          },
+          "average_percent": 66.96
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "FedAdagrad",
+          "accuracy_percent": {
+            "BioASQ": 87.9,
+            "MedMCQA": 48.86,
+            "MedQA": 56.95,
+            "MMLU-Med": 70.55,
+            "PubMedQA": 71.2
+          },
+          "average_percent": 67.09
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "FedCoT",
+          "accuracy_percent": {
+            "BioASQ": 93.55,
+            "MedMCQA": 51.85,
+            "MedQA": 58.99,
+            "MMLU-Med": 74.23,
+            "PubMedQA": 71.4
+          },
+          "average_percent": 70.01
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "FedVP (Uniform)",
+          "accuracy_percent": {
+            "BioASQ": 95.97,
+            "MedMCQA": 59.6,
+            "MedQA": 68.11,
+            "MMLU-Med": 76.07,
+            "PubMedQA": 77.4
+          },
+          "average_percent": 75.43
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "FedVP (Heterogeneous)",
+          "accuracy_percent": {
+            "BioASQ": 96.77,
+            "MedMCQA": 60.27,
+            "MedQA": 68.26,
+            "MMLU-Med": 76.07,
+            "PubMedQA": 77.6
+          },
+          "average_percent": 75.8
+        }
+      ]
+    },
+    "model_heterogeneous_comparison": {
+      "table_number": 3,
+      "label": "tab:model_heterogeneous",
+      "latex": "tables/model_heterogeneous_comparison.tex",
+      "records": [
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "FedMD (N=1)",
+          "accuracy_percent": {
+            "BioASQ": 95.97,
+            "MedMCQA": 57.06,
+            "MedQA": 61.9,
+            "MMLU-Med": 65.64,
+            "PubMedQA": 76.2
+          },
+          "average_percent": 71.36
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "FedMD + SC (N=8)",
+          "accuracy_percent": {
+            "BioASQ": 93.55,
+            "MedMCQA": 57.52,
+            "MedQA": 61.98,
+            "MMLU-Med": 66.26,
+            "PubMedQA": 75.4
+          },
+          "average_percent": 70.94
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "FedMKT (N=1)",
+          "accuracy_percent": {
+            "BioASQ": 95.97,
+            "MedMCQA": 55.49,
+            "MedQA": 61.59,
+            "MMLU-Med": 65.64,
+            "PubMedQA": 73.8
+          },
+          "average_percent": 70.5
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "FedMKT + SC (N=8)",
+          "accuracy_percent": {
+            "BioASQ": 95.97,
+            "MedMCQA": 56.9,
+            "MedQA": 61.59,
+            "MMLU-Med": 63.8,
+            "PubMedQA": 75.2
+          },
+          "average_percent": 70.69
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "FedVP (Heterogeneous)",
+          "accuracy_percent": {
+            "BioASQ": 94.35,
+            "MedMCQA": 58.24,
+            "MedQA": 66.77,
+            "MMLU-Med": 70.55,
+            "PubMedQA": 78.6
+          },
+          "average_percent": 73.7
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "FedMD (N=1)",
+          "accuracy_percent": {
+            "BioASQ": 85.48,
+            "MedMCQA": 50.11,
+            "MedQA": 60.49,
+            "MMLU-Med": 66.26,
+            "PubMedQA": 70.4
+          },
+          "average_percent": 66.55
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "FedMD + SC (N=8)",
+          "accuracy_percent": {
+            "BioASQ": 91.94,
+            "MedMCQA": 54.63,
+            "MedQA": 65.2,
+            "MMLU-Med": 73.62,
+            "PubMedQA": 74.6
+          },
+          "average_percent": 72.0
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "FedMKT (N=1)",
+          "accuracy_percent": {
+            "BioASQ": 93.55,
+            "MedMCQA": 52.09,
+            "MedQA": 58.05,
+            "MMLU-Med": 76.69,
+            "PubMedQA": 70.8
+          },
+          "average_percent": 70.24
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "FedMKT + SC (N=8)",
+          "accuracy_percent": {
+            "BioASQ": 94.35,
+            "MedMCQA": 53.96,
+            "MedQA": 57.66,
+            "MMLU-Med": 76.07,
+            "PubMedQA": 73.4
+          },
+          "average_percent": 71.09
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "FedVP (Heterogeneous)",
+          "accuracy_percent": {
+            "BioASQ": 96.77,
+            "MedMCQA": 60.27,
+            "MedQA": 68.26,
+            "MMLU-Med": 76.07,
+            "PubMedQA": 77.6
+          },
+          "average_percent": 75.8
+        }
+      ]
+    },
+    "cross_generator_baselines": {
+      "table_number": 4,
+      "label": "tab:cross_generator",
+      "latex": "tables/cross_generator_baselines.tex",
+      "records": [
+        {
+          "target_backbone": "Llama-3.2-3B",
+          "trained_verifier_mean_accuracy_percent": {
+            "A": 69.69,
+            "B": 70.95,
+            "C": 67.51,
+            "D": 68.18,
+            "E": 71.52
+          },
+          "pool_mean_accuracy_percent": 72.85,
+          "pretrained_diagonal": {
+            "client": "A",
+            "mean_accuracy_percent": 65.74
+          }
+        },
+        {
+          "target_backbone": "Qwen2.5-7B",
+          "trained_verifier_mean_accuracy_percent": {
+            "A": 74.08,
+            "B": 74.9,
+            "C": 72.66,
+            "D": 73.49,
+            "E": 74.94
+          },
+          "pool_mean_accuracy_percent": 75.8,
+          "pretrained_diagonal": {
+            "client": "B",
+            "mean_accuracy_percent": 71.25
+          }
+        },
+        {
+          "target_backbone": "Llama-3-8B",
+          "trained_verifier_mean_accuracy_percent": {
+            "A": 72.09,
+            "B": 71.81,
+            "C": 70.56,
+            "D": 68.42,
+            "E": 72.73
+          },
+          "pool_mean_accuracy_percent": 73.7,
+          "pretrained_diagonal": {
+            "client": "C",
+            "mean_accuracy_percent": 60.82
+          }
+        },
+        {
+          "target_backbone": "Qwen2.5-3B",
+          "trained_verifier_mean_accuracy_percent": {
+            "A": 67.0,
+            "B": 68.48,
+            "C": 65.58,
+            "D": 65.82,
+            "E": 67.37
+          },
+          "pool_mean_accuracy_percent": 70.21,
+          "pretrained_diagonal": {
+            "client": "D",
+            "mean_accuracy_percent": 64.1
+          }
+        },
+        {
+          "target_backbone": "Qwen2.5-14B",
+          "trained_verifier_mean_accuracy_percent": {
+            "A": 77.18,
+            "B": 77.77,
+            "C": 77.19,
+            "D": 76.88,
+            "E": 78.85
+          },
+          "pool_mean_accuracy_percent": 78.9,
+          "pretrained_diagonal": {
+            "client": "E",
+            "mean_accuracy_percent": 74.46
+          }
+        }
+      ]
+    },
+    "verifier_distillation": {
+      "table_number": 5,
+      "label": "tab:distillation",
+      "latex": "tables/verifier_distillation.tex",
+      "records": [
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "FedVP (Teacher pool)",
+          "accuracy_percent": {
+            "BioASQ": 94.35,
+            "MedMCQA": 58.24,
+            "MedQA": 66.77,
+            "MMLU-Med": 70.55,
+            "PubMedQA": 78.6
+          },
+          "average_percent": 73.7,
+          "delta_pp": null
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "Distilled verifier (Public data)",
+          "accuracy_percent": {
+            "BioASQ": 96.77,
+            "MedMCQA": 57.85,
+            "MedQA": 68.34,
+            "MMLU-Med": 71.17,
+            "PubMedQA": 78.6
+          },
+          "average_percent": 74.55,
+          "delta_pp": 0.84
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "Distilled verifier (Local data)",
+          "accuracy_percent": {
+            "BioASQ": 96.77,
+            "MedMCQA": 57.16,
+            "MedQA": 68.66,
+            "MMLU-Med": 73.62,
+            "PubMedQA": 78.0
+          },
+          "average_percent": 74.84,
+          "delta_pp": 1.14
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "FedVP (Teacher pool)",
+          "accuracy_percent": {
+            "BioASQ": 96.77,
+            "MedMCQA": 60.27,
+            "MedQA": 68.26,
+            "MMLU-Med": 76.07,
+            "PubMedQA": 77.6
+          },
+          "average_percent": 75.8,
+          "delta_pp": null
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "Distilled verifier (Public data)",
+          "accuracy_percent": {
+            "BioASQ": 95.97,
+            "MedMCQA": 58.91,
+            "MedQA": 68.26,
+            "MMLU-Med": 77.91,
+            "PubMedQA": 77.6
+          },
+          "average_percent": 75.73,
+          "delta_pp": -0.07
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "Distilled verifier (Local data)",
+          "accuracy_percent": {
+            "BioASQ": 95.97,
+            "MedMCQA": 59.0,
+            "MedQA": 67.87,
+            "MMLU-Med": 79.14,
+            "PubMedQA": 78.0
+          },
+          "average_percent": 76.0,
+          "delta_pp": 0.2
+        }
+      ]
+    },
+    "uniform_training_by_dataset": {
+      "table_number": 6,
+      "label": "tab:training_full",
+      "latex": "tables/uniform_training_by_dataset.tex",
+      "records": [
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "CoT (N=1)",
+          "accuracy_percent": {
+            "BioASQ": 81.45,
+            "MedMCQA": 41.5,
+            "MedQA": 45.56,
+            "MMLU-Med": 49.69,
+            "PubMedQA": 55.8
+          },
+          "average_percent": 54.8
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "Self-Consistency (N=8)",
+          "accuracy_percent": {
+            "BioASQ": 93.55,
+            "MedMCQA": 52.21,
+            "MedQA": 62.06,
+            "MMLU-Med": 62.58,
+            "PubMedQA": 77.4
+          },
+          "average_percent": 69.56
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "Pretrained single verifier (N=8)",
+          "accuracy_percent": {
+            "BioASQ": 80.65,
+            "MedMCQA": 50.56,
+            "MedQA": 58.68,
+            "MMLU-Med": 59.51,
+            "PubMedQA": 59.4
+          },
+          "average_percent": 61.76
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "Pretrained verifier pool (N=8)",
+          "accuracy_percent": {
+            "BioASQ": 80.65,
+            "MedMCQA": 50.97,
+            "MedQA": 57.66,
+            "MMLU-Med": 61.96,
+            "PubMedQA": 57.0
+          },
+          "average_percent": 61.65
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "FedVP (Uniform) (N=8)",
+          "accuracy_percent": {
+            "BioASQ": 94.35,
+            "MedMCQA": 58.12,
+            "MedQA": 67.95,
+            "MMLU-Med": 70.55,
+            "PubMedQA": 78.4
+          },
+          "average_percent": 73.87
+        },
+        {
+          "target_backbone": "LLaMA-3-8B-Instruct",
+          "method": "FedVP (Heterogeneous) (N=8)",
+          "accuracy_percent": {
+            "BioASQ": 94.35,
+            "MedMCQA": 58.24,
+            "MedQA": 66.77,
+            "MMLU-Med": 70.55,
+            "PubMedQA": 78.6
+          },
+          "average_percent": 73.7
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "CoT (N=1)",
+          "accuracy_percent": {
+            "BioASQ": 91.94,
+            "MedMCQA": 49.8,
+            "MedQA": 56.17,
+            "MMLU-Med": 69.33,
+            "PubMedQA": 71.8
+          },
+          "average_percent": 67.8
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "Self-Consistency (N=8)",
+          "accuracy_percent": {
+            "BioASQ": 94.35,
+            "MedMCQA": 55.46,
+            "MedQA": 64.57,
+            "MMLU-Med": 76.07,
+            "PubMedQA": 74.8
+          },
+          "average_percent": 73.05
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "Pretrained single verifier (N=8)",
+          "accuracy_percent": {
+            "BioASQ": 91.94,
+            "MedMCQA": 53.72,
+            "MedQA": 62.61,
+            "MMLU-Med": 73.01,
+            "PubMedQA": 75.0
+          },
+          "average_percent": 71.25
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "Pretrained verifier pool (N=8)",
+          "accuracy_percent": {
+            "BioASQ": 92.74,
+            "MedMCQA": 54.98,
+            "MedQA": 64.57,
+            "MMLU-Med": 73.62,
+            "PubMedQA": 75.6
+          },
+          "average_percent": 72.3
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "FedVP (Uniform) (N=8)",
+          "accuracy_percent": {
+            "BioASQ": 95.97,
+            "MedMCQA": 59.6,
+            "MedQA": 68.11,
+            "MMLU-Med": 76.07,
+            "PubMedQA": 77.4
+          },
+          "average_percent": 75.43
+        },
+        {
+          "target_backbone": "Qwen2.5-7B-Instruct",
+          "method": "FedVP (Heterogeneous) (N=8)",
+          "accuracy_percent": {
+            "BioASQ": 96.77,
+            "MedMCQA": 60.27,
+            "MedQA": 68.26,
+            "MMLU-Med": 76.07,
+            "PubMedQA": 77.6
+          },
+          "average_percent": 75.8
+        }
+      ]
+    },
+    "uniform_ablations": {
+      "table_number": 7,
+      "label": "tab:ablation",
+      "latex": "tables/uniform_ablations.tex",
+      "records": [
+        {
+          "rule": "Mean probability",
+          "uniform": {
+            "LLaMA-3-8B": 73.87,
+            "Qwen2.5-7B": 75.43
+          },
+          "heterogeneous": {
+            "LLaMA-3-8B": 73.7,
+            "Qwen2.5-7B": 75.8
+          }
+        },
+        {
+          "rule": "Mean logit",
+          "uniform": {
+            "LLaMA-3-8B": 74.21,
+            "Qwen2.5-7B": 75.42
+          },
+          "heterogeneous": {
+            "LLaMA-3-8B": 74.25,
+            "Qwen2.5-7B": 75.77
+          }
+        },
+        {
+          "rule": "Max probability",
+          "uniform": {
+            "LLaMA-3-8B": 73.33,
+            "Qwen2.5-7B": 74.41
+          },
+          "heterogeneous": {
+            "LLaMA-3-8B": 73.68,
+            "Qwen2.5-7B": 75.32
+          }
+        },
+        {
+          "rule": "Member majority vote",
+          "uniform": {
+            "LLaMA-3-8B": 73.82,
+            "Qwen2.5-7B": 74.96
+          },
+          "heterogeneous": {
+            "LLaMA-3-8B": 73.4,
+            "Qwen2.5-7B": 75.27
+          }
+        }
+      ]
+    },
+    "heterogeneous_leave_one_out": {
+      "table_number": 8,
+      "label": "tab:heterogeneous_loo",
+      "latex": "tables/heterogeneous_leave_one_out.tex",
+      "records": [
+        {
+          "configuration": "Full pool",
+          "LLaMA-3-8B": {
+            "average_percent": 73.7,
+            "delta_pp": null
+          },
+          "Qwen2.5-7B": {
+            "average_percent": 75.8,
+            "delta_pp": null
+          }
+        },
+        {
+          "configuration": "w/o Client A",
+          "LLaMA-3-8B": {
+            "average_percent": 73.63,
+            "delta_pp": -0.07
+          },
+          "Qwen2.5-7B": {
+            "average_percent": 75.71,
+            "delta_pp": -0.09
+          }
+        },
+        {
+          "configuration": "w/o Client B",
+          "LLaMA-3-8B": {
+            "average_percent": 73.32,
+            "delta_pp": -0.38
+          },
+          "Qwen2.5-7B": {
+            "average_percent": 75.43,
+            "delta_pp": -0.37
+          }
+        },
+        {
+          "configuration": "w/o Client C",
+          "LLaMA-3-8B": {
+            "average_percent": 73.54,
+            "delta_pp": -0.16
+          },
+          "Qwen2.5-7B": {
+            "average_percent": 76.0,
+            "delta_pp": 0.2
+          }
+        },
+        {
+          "configuration": "w/o Client D",
+          "LLaMA-3-8B": {
+            "average_percent": 73.65,
+            "delta_pp": -0.05
+          },
+          "Qwen2.5-7B": {
+            "average_percent": 75.37,
+            "delta_pp": -0.43
+          }
+        },
+        {
+          "configuration": "w/o Client E",
+          "LLaMA-3-8B": {
+            "average_percent": 72.62,
+            "delta_pp": -1.08
+          },
+          "Qwen2.5-7B": {
+            "average_percent": 75.4,
+            "delta_pp": -0.39
+          }
+        }
+      ]
+    }
+  }
+}

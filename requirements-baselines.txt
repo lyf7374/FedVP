@@ -1,0 +1,18 @@
+# Recorded single-backbone baseline runtime; install torch 2.6.0 separately.
+numpy==1.26.4
+transformers==4.51.1
+peft==0.15.2
+accelerate==1.6.0
+datasets==3.5.1
+tokenizers==0.21.1
+huggingface-hub==0.30.2
+safetensors==0.5.3
+pyarrow==20.0.0
+sentencepiece==0.2.0
+protobuf==5.29.5
+click==8.1.8
+openai==1.76.0
+omegaconf==2.3.0
+jinja2==3.1.6
+tqdm==4.67.1
+pytest==8.3.5

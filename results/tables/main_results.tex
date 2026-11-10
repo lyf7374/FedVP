@@ -1,0 +1,35 @@
+\begin{table*}[!t]
+\centering\small
+\setlength{\tabcolsep}{3.7pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Method & BioASQ & MedMCQA & MedQA & MMLU-Med & PubMedQA & Avg. \\
+\midrule
+\multicolumn{7}{l}{\textbf{Target backbone: LLaMA-3-8B-Instruct}} \\
+FedIT & 86.29 & 57.47 & 60.80 & 66.26 & 76.60 & 69.48 \\
+FFA-LoRA & 91.13 & 58.59 & 61.59 & 65.64 & 76.40 & 70.67 \\
+FLoRA & 87.90 & 57.69 & 61.35 & 63.19 & 75.60 & 69.15 \\
+FedPrompt & 92.74 & \textbf{59.77} & 61.74 & 69.33 & 77.60 & 72.24 \\
+FedProx & 83.87 & 46.74 & 54.52 & 60.12 & 72.20 & 63.49 \\
+FedAdam & 81.45 & 44.32 & 48.55 & 53.99 & 52.80 & 56.22 \\
+FedAdagrad & 85.48 & 45.64 & 49.33 & 53.99 & 53.80 & 57.65 \\
+FedCoT & 88.71 & 46.40 & 56.09 & 60.12 & 76.80 & 65.62 \\
+\rowcolor{oursrow} \ours{} (Uniform) & \textbf{94.35} & 58.12 & \textbf{67.95} & \textbf{70.55} & 78.40 & \textbf{73.87} \\
+\rowcolor{oursrow} \ours{} (Heterogeneous) & \textbf{94.35} & 58.24 & 66.77 & \textbf{70.55} & \textbf{78.60} & 73.70 \\
+\midrule
+\multicolumn{7}{l}{\textbf{Target backbone: Qwen2.5-7B-Instruct}} \\
+FedIT & 86.29 & 49.82 & 52.16 & 63.19 & 65.00 & 63.29 \\
+FFA-LoRA & 88.71 & 46.81 & 52.47 & 67.48 & 68.40 & 64.78 \\
+FLoRA & 89.52 & 52.38 & 56.40 & 67.48 & 70.00 & 67.16 \\
+FedPrompt & 87.90 & 46.38 & 53.57 & 60.74 & 63.60 & 62.44 \\
+FedProx & 72.58 & 43.58 & 47.45 & 62.58 & 56.80 & 56.60 \\
+FedAdam & 90.32 & 48.46 & 56.48 & 70.55 & 69.00 & 66.96 \\
+FedAdagrad & 87.90 & 48.86 & 56.95 & 70.55 & 71.20 & 67.09 \\
+FedCoT & 93.55 & 51.85 & 58.99 & 74.23 & 71.40 & 70.01 \\
+\rowcolor{oursrow} \ours{} (Uniform) & 95.97 & 59.60 & 68.11 & \textbf{76.07} & 77.40 & 75.43 \\
+\rowcolor{oursrow} \ours{} (Heterogeneous) & \textbf{96.77} & \textbf{60.27} & \textbf{68.26} & \textbf{76.07} & \textbf{77.60} & \textbf{75.80} \\
+\bottomrule
+\end{tabular}
+\caption{Accuracy (\%) across five medical QA datasets. Each table block reports results from all methods using the same target backbone for inference. Avg.\ is the unweighted mean across datasets.}
+\label{tab:main}
+\end{table*}

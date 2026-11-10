@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "backbones": [
+    "Meta-Llama-3-8B-Instruct",
+    "Qwen2.5-7B-Instruct"
+  ],
+  "clients": {
+    "bioasq": 494,
+    "medmcqa": 2000,
+    "medqa": 10178,
+    "mmlu": 1299,
+    "pubmedqa": 450
+  },
+  "common": {
+    "rounds": 2,
+    "local_epochs": 1,
+    "effective_batch_size": 2,
+    "micro_batch_size": 1,
+    "gradient_accumulation_steps": 2,
+    "participation": "all_five_clients_each_round",
+    "aggregation_weight": "client_train_sample_count",
+    "seed": 42,
+    "client_seed_rule": "42 + round_index * 5 + client_index (zero-based)",
+    "backbone_dtype": "bfloat16",
+    "adapter_dtype": "float32",
+    "quantization": null,
+    "attention_implementation": "sdpa",
+    "gradient_checkpointing": true,
+    "checkpoint_use_reentrant": false,
+    "training_max_length": null,
+    "over_context_behavior": "error_with_dataset_and_row_index; never truncate",
+    "shuffle": true,
+    "drop_last": false,
+    "final_partial_batch": "retain; normalize by actual supervised target tokens in final accumulation window",
+    "loss_normalization": "sum_CE_over_non_ignored_shifted_targets_in_actual_accumulation_window",
+    "prompt_source": "upstream/FedCoT/src/prompt_loader.py:load_prompts",
+    "prompt_assembly": "load_prompts(dataset) + '\\n\\nQ: ' + row.question; tokenizer chat template",
+    "target": "preserve source rationale before the final ####; canonical final line #### LETTER. OPTION_TEXT",
+    "save_optimizer": false,
+    "logging_steps": 20,
+    "save_algorithm_state": true
+  },
+  "prediction": {
+    "num_candidates": 1,
+    "candidate_batch_size": 1024,
+    "sampling_seed": 42,
+    "temperature_range": [
+      0.3,
+      0.9
+    ],
+    "top_p_range": [
+      0.7,
+      0.95
+    ],
+    "sampling_plan": "numpy.RandomState(42); one temperature then one top_p draw per 1024 single candidates, in configured client order, test split",
+    "initial_max_new_tokens": 4096,
+    "on_length_limit": "retry the same question with the same generation seed and doubled budget, up to native context",
+    "generation_seed_rule": "42 + sample_index (zero-based within each dataset)",
+    "source": "FedCoT author generator ranges and batch rule, also used in scripts/run_candidates.py; one candidate per trained generative baseline, as specified in plan.md. Per-sample generation seeds and 4096 initial budget are implementation choices."
+  },
+  "methods": {
+    "fedprox": {
+      "display_name": "FedProx",
+      "aggregation": "sample_weighted_adapter_average",
+      "lora_rank": 32,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj"
+      ],
+      "initialization": "PEFT_default_kaiming_uniform_A_zero_B",
+      "train_on_inputs": true,
+      "optimizer": "adamw",
+      "learning_rate": 0.0003,
+      "weight_decay": 0.0,
+      "adam_betas": [
+        0.9,
+        0.999
+      ],
+      "adam_epsilon": 1e-08,
+      "scheduler": "linear",
+      "warmup_steps": 0,
+      "max_grad_norm": 1.0,
+      "artifact": "peft_adapter",
+      "source_ids": [
+        "existing_fedit_shared_recipe",
+        "openfedllm_medical_table10",
+        "openfedllm_llm_implementation"
+      ],
+      "prox_mu": 0.01,
+      "algorithm": "CE + mu/2 * squared distance to current round global trainable adapter"
+    },
+    "fedadam": {
+      "display_name": "FedAdam",
+      "aggregation": "sample_weighted_delta_then_FedAdam",
+      "lora_rank": 32,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj"
+      ],
+      "initialization": "PEFT_default_kaiming_uniform_A_zero_B",
+      "train_on_inputs": true,
+      "optimizer": "adamw",
+      "learning_rate": 0.0003,
+      "weight_decay": 0.0,
+      "adam_betas": [
+        0.9,
+        0.999
+      ],
+      "adam_epsilon": 1e-08,
+      "scheduler": "linear",
+      "warmup_steps": 0,
+      "max_grad_norm": 1.0,
+      "artifact": "peft_adapter",
+      "source_ids": [
+        "existing_fedit_shared_recipe",
+        "openfedllm_medical_table10",
+        "openfedllm_llm_implementation",
+        "fedopt_paper",
+        "qa_integration",
+        "openfedllm_defaults"
+      ],
+      "server_lr": 0.0001,
+      "tau": 0.001,
+      "beta1": 0.9,
+      "beta2": 0.99,
+      "algorithm": "m=beta1*m+(1-beta1)*delta; v=beta2*v+(1-beta2)*delta^2; w+=server_lr*m/(sqrt(v)+tau)",
+      "moment_initialization": "m=0, v=tau^2",
+      "bias_correction": false
+    },
+    "fedadagrad": {
+      "display_name": "FedAdagrad",
+      "aggregation": "sample_weighted_delta_then_FedAdagrad",
+      "lora_rank": 32,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj"
+      ],
+      "initialization": "PEFT_default_kaiming_uniform_A_zero_B",
+      "train_on_inputs": true,
+      "optimizer": "adamw",
+      "learning_rate": 0.0003,
+      "weight_decay": 0.0,
+      "adam_betas": [
+        0.9,
+        0.999
+      ],
+      "adam_epsilon": 1e-08,
+      "scheduler": "linear",
+      "warmup_steps": 0,
+      "max_grad_norm": 1.0,
+      "artifact": "peft_adapter",
+      "source_ids": [
+        "existing_fedit_shared_recipe",
+        "openfedllm_medical_table10",
+        "openfedllm_llm_implementation",
+        "fedopt_paper",
+        "qa_integration"
+      ],
+      "server_lr": 0.001,
+      "tau": 0.001,
+      "algorithm": "v+=delta^2; w+=server_lr*delta/(sqrt(v)+tau)",
+      "moment_initialization": "v=tau^2",
+      "bias_correction": false
+    }
+  },
+  "scope": "FedProx, FedAdam and FedAdagrad with the paper medical QA splits"
+}
