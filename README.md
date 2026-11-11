@@ -92,14 +92,6 @@ tests/         CPU mechanical checks of scoring, training and result consistency
 
 The repository contains code and reported results. Trained checkpoint weights and the full per-candidate archives are not bundled or hosted by this preparation. The reproduction commands train from the listed pretrained snapshots.
 
-## Checks
-
-```bash
-python -m unittest discover -s tests -v
-```
-
-Checks use synthetic tensors and saved result values. They do not launch the full experiments.
-
 ## Citation
 
 ```bibtex
