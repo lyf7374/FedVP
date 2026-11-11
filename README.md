@@ -4,6 +4,8 @@
 
 Yifan Li · Xi Chen
 
+[Paper (arXiv)](https://arxiv.org/abs/2611.13708)
+
 FedVP lets clients collaborate while retaining independently chosen LLM backbones. Each client trains a verifier on local questions and responses from its frozen generator. Clients share the trained verifiers; the resulting pool combines their judgments at inference, without averaging model parameters or requiring a shared training dataset.
 
 ![FedVP overview](assets/overview.png)
@@ -104,11 +106,14 @@ Checks use synthetic tensors and saved result values. They do not launch the ful
 ## Citation
 
 ```bibtex
-@unpublished{li2026fedvp,
+@misc{li2026fedvp,
   title = {FedVP: Federated Learning across Heterogeneous Models by Pooling Locally Trained Verifiers},
   author = {Li, Yifan and Chen, Xi},
   year = {2026},
-  note = {Manuscript}
+  eprint = {2611.13708},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  url = {https://arxiv.org/abs/2611.13708}
 }
 ```
 

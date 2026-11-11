@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use FedVP, please cite the accompanying manuscript."
+message: "If you use FedVP, please cite the accompanying paper."
 type: software
 title: "FedVP: Federated Learning across Heterogeneous Models by Pooling Locally Trained Verifiers"
 authors:
@@ -9,3 +9,14 @@ authors:
   - family-names: Chen
     given-names: Xi
     affiliation: "University of Bath; Fudan University"
+preferred-citation:
+  type: article
+  title: "FedVP: Federated Learning across Heterogeneous Models by Pooling Locally Trained Verifiers"
+  authors:
+    - family-names: Li
+      given-names: Yifan
+    - family-names: Chen
+      given-names: Xi
+  year: 2026
+  journal: arXiv
+  url: "https://arxiv.org/abs/2611.13708"
