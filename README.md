@@ -22,16 +22,15 @@ The heterogeneous configuration has five clients with different generators and v
 
 ## Installation
 
-Use Python 3.11 and a Linux CUDA environment for model training and inference. CPU table inspection and aggregation also work on Windows.
+Use Python 3.11 and Linux with CUDA 11.8 for the unified training and inference environment. CPU table inspection and aggregation also work on Windows.
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-# Install the PyTorch 2.6.0 build appropriate to your CUDA environment first.
-python -m pip install -r requirements-verifier.txt -r requirements-data.txt
+python -m pip install -r requirements.txt
 ```
 
-`requirements-verifier.txt` records the heterogeneous verifier environment. Generation uses the separate recorded SGLang/CUDA 11.8 stack in `requirements-generation-cu118.txt`; use a separate environment for it. See [reproduction](docs/reproduction.md) for commands and artifact formats.
+`requirements.txt` combines the training, generation, data, plotting and test dependencies, including PyTorch 2.6.0 and SGLang 0.4.6.post1. See [reproduction](docs/reproduction.md) for commands, original runtime versions and artifact formats.
 
 ## Reproduce FedVP
 
@@ -58,13 +57,12 @@ Some model repositories require accepted access terms and a locally authenticate
 Example for Client A (BioASQ):
 
 ```bash
-# Run in the generation environment, using your selected available GPU.
+# Use your selected available GPU.
 CUDA_VISIBLE_DEVICES=0 python scripts/run_heterogeneous_candidates.py \
   --model-name Llama-3.2-3B-Instruct \
   --model-path models/Llama-3.2-3B-Instruct \
   --datasets bioasq --splits train,test
 
-# Run in the verifier environment.
 CUDA_VISIBLE_DEVICES=0 python scripts/train_heterogeneous_verifier.py \
   --center bioasq \
   --candidates outputs/best_of_n/Llama-3.2-3B-Instruct/bioasq_best_of_n/train/train_best_of_n.json \
@@ -97,7 +95,6 @@ The repository contains code and reported results. Trained checkpoint weights an
 ## Checks
 
 ```bash
-python -m pip install -r requirements-dev.txt
 python -m unittest discover -s tests -v
 ```
 
@@ -116,5 +113,3 @@ Checks use synthetic tensors and saved result values. They do not launch the ful
   url = {https://arxiv.org/abs/2611.13708}
 }
 ```
-
-See [license status](LICENSE_STATUS.md) and [third-party sources](THIRD_PARTY.md).

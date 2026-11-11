@@ -1,8 +1,26 @@
-# Recorded Linux CUDA 11.8 generation runtime. Install in a separate environment.
--c requirements-baselines.txt
+# Unified Python 3.11 / Linux CUDA 11.8 environment.
+# SGLang 0.4.6.post1 requires Transformers 4.51.1.
 --extra-index-url https://download.pytorch.org/whl/cu118
 torch==2.6.0+cu118
 torchvision==0.21.0+cu118
+transformers==4.51.1
+peft==0.15.2
+accelerate==1.6.0
+numpy==1.26.4
+datasets==3.5.1
+tokenizers==0.21.1
+huggingface-hub==0.30.2
+safetensors==0.5.3
+pyarrow==20.0.0
+sentencepiece==0.2.0
+protobuf==5.29.5
+click==8.1.8
+openai==1.76.0
+omegaconf==2.3.0
+jinja2==3.1.6
+tqdm==4.67.1
+
+# Candidate generation.
 sgl-kernel @ https://github.com/sgl-project/whl/releases/download/v0.1.2/sgl_kernel-0.1.2-cp39-abi3-manylinux2014_x86_64.whl
 flashinfer-python @ https://github.com/flashinfer-ai/flashinfer/releases/download/v0.2.3/flashinfer_python-0.2.3%2Bcu118torch2.6-cp38-abi3-linux_x86_64.whl
 sglang[runtime_common]==0.4.6.post1
@@ -37,3 +55,7 @@ xgrammar==0.1.17
 outlines==0.1.11
 partial-json-parser==0.2.1.1.post5
 einops==0.8.1
+
+# Plotting and CPU checks.
+matplotlib>=3.7
+pytest==8.3.5

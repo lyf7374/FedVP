@@ -4,9 +4,9 @@ Run commands from the repository root. The scripts operate on explicit local mod
 
 ## Environments
 
-Use Python 3.11. The recorded native-head verifier stack uses PyTorch 2.6.0, Transformers 4.52.3 and PEFT 0.15.2 (`requirements-verifier.txt`). The Skywork-Llama member also used Transformers 4.51.1 in the original run. SGLang generation used 0.4.6.post1 with the separate 4.51.1 stack. The complete CUDA 11.8 generation requirements are in `requirements-generation-cu118.txt`; install them in a separate Linux environment. `--server-python` can point to that environment's Python, or defaults to the invoking Python.
+Install `requirements.txt` in a Python 3.11 Linux CUDA 11.8 environment. It combines all dependencies and pins Transformers 4.51.1 to satisfy SGLang 0.4.6.post1. The original native-head verifier runs used PyTorch 2.6.0, PEFT 0.15.2 and Transformers 4.52.3; Skywork-Llama also used Transformers 4.51.1. Original SGLang generation used the 4.51.1 stack. `--server-python` defaults to the invoking Python and can select another installed generation runtime.
 
-The public result reader and CPU selector require only standard-library Python. Data preparation requires NumPy and PyArrow. Choose the PyTorch CUDA wheel for your hardware and driver; model snapshots are downloaded separately using `scripts/download_models.py`.
+The public result reader and CPU selector require only standard-library Python. Data preparation requires NumPy and PyArrow. The unified requirements include the CUDA 11.8 PyTorch wheels; model snapshots are downloaded separately using `scripts/download_models.py`.
 
 ## Candidate generation
 
